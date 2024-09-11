@@ -1,12 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eccv24macdiff</title>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="language" content="english">
+<title>cvpr2023_lll</title>
+<meta name="description" content="cvpr2023_lll">
+<meta name="author" content="Lilang Lin">
+<link rel="icon" type="image/x-icon" href="http://www.icst.pku.edu.cn/favicon.ico">
+<link rel="stylesheet" type="text/css" href="files/project.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script> 
+	function coming_soon()
+	{
+		alert("We are cleaning up our code to make it more simple and readable");
+	}
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$']]},
+        messageStyle: "none"
+    });</script>
+
 </head>
+	
+
 <body>
-  <h1>Actionlet-Dependent Contrastive Learning for Unsupervised Skeleton-Based Action Recognition</h1>
-  <p>Coming Soon...</p>
-</body>
+<div id="main">
+  
+	<div class="content"><br>
+		<div class="title">
+			<p class="banner" align="center"></p>
+			<h1>Actionlet-Dependent Contrastive Learning for Unsupervised Skeleton-Based Action Recognition</h1>
+		</div>
+
+		<div class="authors" >
+            <div class="author">
+               <a href="mailto:linlilang@pku.edu.cn" style="text-decoration: none">Lilang Lin</a>
+            </div>
+            <div class="author">
+               <a href="mailto:zjh2020@pku.edu.cn" style="text-decoration: none">Jiahang Zhang</a>
+			</div>
+            <div class="author">
+               <a href="mailto:liujiaying@pku.edu.cn" style="text-decoration: none">Jiaying Liu</a>
+            </div>
+            <p style="margin-bottom:-20px"><em>CVPR 2023 (Highlight<i class="fa fa-star" style="color: gold;"></i>, 10% of accepted papers)</em></p>
+		 </div>
+		<br><hr>
+		<div class="teaser sec" style="text-align:center;">
+			<img src="./files/teaser.png" alt="Teaser" width="60%">
+			<p style="text-align: left;">Our proposed approach (ActCLR) locates the motion regions as actionlet to guide contrastive learning. Using actionlets, we design motion-adaptive data transformation and semantic-aware feature pooling to decouple action and non-action regions. These modules make the motion information of the sequence to be attended to while reducing the interference of static regions in feature extraction.</p>
+		</div>
+		
+
+		<div class="abstract_sec">
+		  <h2>Abstract</h2>
+		  <div class="description">
+			<p style="text-align: left;">
+			  The self-supervised pretraining paradigm has achieved great success in skeleton-based action recognition. However, these methods treat the motion and static parts equally, and lack an adaptive design for different parts, which has a negative impact on the accuracy of action recognition. To realize the adaptive action modeling of both parts, we propose an <strong>Actionlet-Dependent Contrastive Learning method (ActCLR)</strong>. The actionlet, defined as the discriminative subset of the human skeleton, effectively decomposes motion regions for better action modeling. In detail, by contrasting with the static anchor without motion, we extract the motion region of the skeleton data, which serves as the actionlet, in an unsupervised manner. Then, centering on actionlet, a motion-adaptive data transformation method is built. Different data transformations are applied to actionlet and non-actionlet regions to introduce more diversity while maintaining their own characteristics. Meanwhile, we propose a semantic-aware feature pooling method to build feature representations among motion and static regions in a distinguished manner. Extensive experiments on NTU RGB+D and PKUMMD show that the proposed method achieves remarkable action recognition performance. More visualization and quantitative experiments demonstrate the effectiveness of our method.
+			</p>
+		  </div>
+		</div>
+		
+	
+		<div class="Framework sec">
+			<h2>Framework</h2>
+			<img src="./files/pipeline.png" alt="Framework" width="100%">
+			<p style="text-align: left;">The pipeline of actionlet-dependent contrastive learning. In <strong>unsupervised actionlet selection</strong>, we employ the difference from the average motion to obtain the region of motion. For contrastive learning, we employ two streams, i.e., the online stream and the offline stream. The above stream is the online stream, which is updated by gradient. The below is the offline stream, which is updated by momentum. We get the augmented data by performing <strong>motion-adaptive data transformation (MATS)</strong> on the input data with the obtained actionlet. In offline feature extraction, we employ <strong>semantic-aware feature pooling (SAFP)</strong> to obtain the accurate feature anchor. Finally, utilizing similarity mining, we increase the similarity between positives and decrease the similarity between negatives.</p>
+			</div>
+
+		<div class="experiments_sec">
+			<h2>Results</h2>
+			<div class="picture_wrapper" width="100%">
+				<img src="./files/table1.png" alt="Results" width="100%">
+				<img src="./files/table2.png" alt="Results" width="100%">
+			</div>
+		</div>
+		  
+		
+	  	<div class="download_sec">
+			<h2>Resources</h2>
+			<div>
+				<li><strong>Paper</strong>:  <a href="https://arxiv.org/abs/2303.10904">arXiv</a></li>
+				<li><strong>Supplementary material</strong>:  coming soon</li>
+				<li><strong>Code</strong>:  <a href="https://github.com/LanglandsLin/ActCLR">github link</a></li>
+
+			</div>
+		</div>
+
+		<div class="citation_sec">
+			<h2>Citation</h2>
+			<p class="bibtex">@inproceedings{lin2023actionlet, 
+&nbsp;&nbsp; author={Lin, Lilang and Zhang, Jiahang and Liu, Jiaying}, 
+&nbsp;&nbsp; booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+&nbsp;&nbsp; title={Actionlet-Dependent Contrastive Learning for Unsupervised Skeleton-Based Action Recognition}, 
+&nbsp;&nbsp; year={2023}, 
+&nbsp;&nbsp; }
+			</p>
+	    </div>
+		
+		
+       <div>
+          <h2>Reference</h2>
+            <p>[1]. Lilang Lin, Sijie Song, Wenhan Yang, and Jiaying Liu. MS2L: Multi-task self-supervised learning for skeleton based action recognition. In ACM MM, 2020.</p>
+			<p>[2]. Sijie Song, Cuiling Lan, Junliang Xing, Wenjun Zeng, and Jiaying Liu. Spatio-temporal attention-based lstm networks for 3d action recognition and detection. IEEE TIP, 2018.</p>
+			<p>[3]. Jiaying Liu, Sijie Song, Chunhui Liu, Yanghao Li, and Yueyu Hu. A benchmark dataset and comparison study for multi-modal human action analytics. ACM TOMM, 2020.</p>
+        </div>
+
+		<div class="download_sec">
+			<br><hr>
+			<div>
+				<li><a href="https://langlandslin.github.io/">My Home Page</a></li>
+				<li><a href="http://39.96.165.147/struct.html">STRUCT Home Page</a></li>
+			</div>
+		</div>
+	
+  </div>
+</div>
+
+
+</body></html>
+
 </html>
