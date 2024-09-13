@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,3 +11,365 @@
   <p>Coming Soon</p>
 </body>
 </html>
+=======
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECCV 2024 MacDiff</title>
+  <!-- Bootstrap -->
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> -->
+  <style>
+    body {
+      background: rgb(255, 255, 255) no-repeat fixed top left;
+      font-family: "Inter", 'Open Sans', sans-serif;
+    }
+  </style>
+
+</head>
+
+<!-- cover -->
+<section>
+  <div class="jumbotron text-center mt-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <!-- Title -->
+          <h2 style="font-size:30px;"><strong>MacDiff</strong>: Unified Skeleton Modeling with Masked Conditional Diffusion</h2>
+          <h4 style="color:#6e6e6e;"> ECCV 2024 </h4>
+          <hr>
+          <h6>
+            <a class="a2" href="https://red-fairy.github.io/" target="_blank">Lehong Wu</a><sup>1,2</sup>&nbsp; &nbsp;
+            <a class="a2" href="https://langlandslin.github.io/" target="_blank">Lilang Lin</a><sup>1</sup>&nbsp;
+            &nbsp;
+            <a class="a2" href="https://jhang2020.github.io/" target="_blank">Jiahang Zhang</a><sup>1</sup>&nbsp; &nbsp;
+            <a class="a2" href="https://realpasu.github.io/" target="_blank">Yiyang Ma</a><sup>1</sup>&nbsp; &nbsp;
+            <a class="a2" href="http://39.96.165.147/people/liujiaying.html" target="_blank">Jiaying
+              Liu</a><sup>1</sup>&nbsp;
+            &nbsp;
+            <br>
+            <br>
+
+            <p>
+              <sup>1</sup>Wangxuan Institute of Computer Technology, Peking University&nbsp; &nbsp;
+              <sup>2</sup>School of EECS, Peking University&nbsp; &nbsp;
+            </p>
+            <!-- <p> <sup>*</sup> Corresponding author &nbsp;
+              <br>
+            </p> -->
+          </h6>
+          <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+          <div class="row justify-content-center">
+            <div class="column">
+              <p class="mb-5">
+                <a class="btn btn-large btn-light" href="./macdiff-paper.pdf" role="button" target="_blank">
+                  <i class="fa fa-file"></i> Paper </a>
+              </p>
+            </div>
+            <div class="column">
+              <p class="mb-5">
+                <a class="btn btn-large btn-light" href="./macdiff-supp.pdf" role="button" target="_blank">
+                  <i class="fa fa-github-alt"></i> Supplementary </a>
+              </p>
+            </div>
+            <div class="column">
+              <p class="mb-5">
+                <a class="btn btn-large btn-light" href="./index.html" role="button"
+                  target="_blank">
+                  <i class="fa fa-github-alt"></i> Code </a>
+              </p>
+            </div>
+            <!-- <div class="column">
+                  <p class="mb-5">
+                    <a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
+                <i class="fa fa-github-alt"></i> Dataset (Coming soon) </a> </p>
+              </div> -->
+            <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
+                <i class="fa fa-github-alt"></i> Dataset (Coming soon) </a> </p>
+              </div> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <!-- <img src="images/teaser.jpg" alt="input" class="img-responsive graph" width="70%" /> -->
+          <!-- <br> -->
+        </div>
+        <p class="text-justify">
+          <!-- In this work, we present a novel similarity min-max framework for zero-shot day-night domain adaptation.
+          On the image level, we generate a synthetic nighttime domain that shares minimum feature similarity with the
+          daytime domain to enlarge the domain gap. On the model level, we learn illumination-robust representations by
+          maximizing the feature similarity of images from the two domains for better model adaptation. Our framework
+          can serve as a plug-and-play remedy to existing daytime models. To verify its effectiveness, we conduct
+          extensive experiments on multiple high-level nighttime vision tasks, including classification, semantic
+          segmentation, visual place recognition, and video action recognition. Results on various benchmarks
+          demonstrate our superiority over the state-of-the-art. -->
+          We present Masked Conditional Diffusion (MacDiff), a unified framework for human skeleton modeling, 
+          which learns powerful representations for both discriminative and generative downstream tasks.
+
+          We theoretically demonstrate the adavantage of our framework over prevalent representation learning paradigms.
+
+          MacDiff achieves state-of-the-art performance on large-scale representation learning benchmarks. 
+          Remarkably, by leveraging diffusion-based data augmentation with MacDiff for fine-tuning, we
+          significantly improve the action recognition performance with scarce labeled data.
+        </p>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/y13pSGitMJc?si=uWJ3o7Uhwkt_4FiK" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- abstract -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Abstract</strong></h2>
+        <hr style="margin-top:0px">
+        <p class="text-justify">
+          Self-supervised learning has proved effective for skeleton
+          based human action understanding. However, previous works either rely
+           on contrastive learning that suffers false negative problems or are based
+           on reconstruction that learns too much unessential low-level clues, lead
+          ing to limited representations for downstream tasks. Recently, great advances 
+          have been made in generative learning, which is naturally a challenging 
+          yet meaningful pretext task to model the general underlying data
+           distributions. However, the representation learning capacity of generative
+          models is under-explored, especially for the skeletons with spacial
+           sparsity and temporal redundancy. To this end, we propose <strong>Masked 
+            Conditional Diffusion (MacDiff)</strong>
+            as a unified framework for human skeleton
+           modeling. For the first time, we leverage diffusion models as effective
+           skeleton representation learners. Specifically, we train a diffusion decoder
+           conditioned on the representations extracted by a semantic encoder. Random
+          masking is applied to encoder inputs to introduce a information bottleneck
+           and remove redundancy of skeletons. Furthermore, we theoretically 
+           demonstrate that our generative objective involves the contrastive
+           learning objective which aligns the masked and noisy views. Meanwhile,
+           it also enforces the representation to complement for the noisy view,
+           leading to better generalization performance. MacDiff achieves state-of-the-art 
+           performance on representation learning benchmarks while maintaining the competence for generative tasks. 
+           Moreover, we leverage the diffusion model for data augmentation, significantly enhancing the fine-tuning 
+           performance in scenarios with scarce labeled data. 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Method</strong></h2>
+        <hr style="margin-top:0px">
+        <!-- <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Full pipeline</b></h3> -->
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/thumbnail_5x3.png" alt="input" class="img-responsive graph" width="75%" />
+        </div>
+        <p class="text-justify">
+          We train a diffusion decoder conditioned on the representations extracted by a semantic encoder. 
+          <br>
+          <b>(I)</b> We embed skeletons into tokens and employ random masking. The global representation
+          is obtained by pooling the local representations extracted by the semantic encoder. 
+          <br>
+          <b>(II)</b> We sample the noisy skeleton following the diffusion process $q(x_t|x_0)$. The diffusion decoder predicts the noise $\epsilon$
+          from $x_0$ guided by the learned representation $z$. The pre-trained encoder can be utilized independently in downstream discriminative tasks.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<br>
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Experimental Results</strong></h2>
+        <hr style="margin-top:0px">
+        <p class="text-justify">
+          <b>Self-supervised Evaluation Protocols.</b> 
+          MacDiff outperforms contrastive learning and reconstruction-based methods on linear evaluation and transfer learning evaluation.
+          In linear evaluation, a linear classifier is attached to the fixed encoder, and is trained for action recognition. 
+          In transfer learning evaluation, we pretrain the encoder on a source dataset and perform linear evaluation on a target dataset.          
+        </p>
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/results_ssl.png" alt="input" class="img-responsive graph" width="80%" />
+        </div>
+
+        <p class="text-justify">
+          <b>Semi-supervised Fine-tuning Evaluation.</b> In semi-supervised fine-tuning, the pretrained encoder and classifier are trained with a small proportion of labeled data. 
+          With the proposed diffusion-based data augmentation, our method brings significant performance gain compared with state-of-the-art methods and our baseline.
+
+        </p>
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/results_semi.png" alt="input" class="img-responsive graph" width="70%" />
+        </div>
+
+        <p class="text-justify">
+          <b>Generative Tasks.</b> Additionally, we demonstrate that MacDiff is capable of generative tasks as a diffusion model, 
+          such as motion generation and motion reconstruction. 
+
+        </p>
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/results_gen.png" alt="input" class="img-responsive graph" width="80%" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<br>
+<br>
+
+<!--   
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Language-guided Dexterous Grasping</strong></h2>
+            <hr style="margin-top:0px">
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/language.png" alt="input" class="img-responsive graph" width="60%"/>
+              </div>
+              <p class="text-justify">
+                <b>Qualitative results of language-guided grasp proposal selection</b>.
+                CLIP can select proposals complying with the language instruction, 
+                allowing goal-conditioned policy to execute potentially functional grasps.
+              </p>
+            <br>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>-->
+
+  <!-- <section> 
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Qualitative results</strong></h2>
+          <hr style="margin-top:0px">
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/gallery2.png" alt="input" class="img-responsive graph" width="60%"/>
+          </div>
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/gallery.png" alt="input" class="img-responsive graph" width="100%"/>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> -->
+
+<!-- citing -->
+<div class="container">
+  <div class="row ">
+    <div class="col-12">
+      <h2><strong>Citation</strong></h2>
+      <hr style="margin-top:0px">
+      <pre style="background-color: #e9eeef;padding: 0 1.5em">
+        <code>
+        @inproceedings{wu2024macdiff,
+          title={MacDiff: Unified Skeleton Modeling with Masked Conditional Diffusion},
+          author={Lehong Wu and Lilang Lin and Jiahang Zhang and Yiyang Ma and Jiaying Liu},
+          booktitle={ECCV},
+          year={2024},
+        }</code>
+      </pre>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Contact -->
+<div class="container">
+  <div class="row ">
+    <div class="col-12">
+      <h2><strong>Contact</strong></h2>
+      <hr style="margin-top:0px">
+      <p>If you have any questions, please feel free to contact us:
+      <!-- <ul> -->
+        <li><b>Lehong Wu</b>&colon; aladonwlh<span style="display:none">Prevent spamming</span>@<span
+            style="display:none">Prevent spamming</span>stu.pku.edu.cn </li>
+      <!-- </ul> -->
+      <!-- <p>
+        Group Page: <a href="http://39.96.165.147/struct.html">STRUCT</a>
+      </p> -->
+      <!-- <ul> -->
+        <li><b>Team Page</b>&colon; <a href="http://39.96.165.147/struct.html">STRUCT</a></li>
+      <!-- </ul> -->
+      </p>
+      </pre>
+    </div>
+  </div>
+</div>
+
+
+<a href="https://hits.seeyoufarm.com">
+  <img id="myImage"
+    src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpku-epic.github.io%2FUniDexGrasp%2B%2B%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" />
+  <script>
+    function hideImage() {
+      document.getElementById("myImage").style.display = "none";
+    }
+    window.onload = hideImage;
+  </script>
+</a>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      macros: {
+        bm: ["{\\boldsymbol #1}", 1],
+      }
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+
+</html>
+>>>>>>> master
